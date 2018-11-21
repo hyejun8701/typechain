@@ -37,7 +37,7 @@ class Block {
   }
 }
 
-const genesisBlock: Block = new Block(0, "201811211606", "", "hello", 12345);
+const genesisBlock: Block = new Block(0, "2020202020202", "", "hello", 123456);
 
 let blockChain: Block[] = [genesisBlock];
 
@@ -103,5 +103,11 @@ const addBlock = (candidateBlock: Block): void => {
     blockChain.push(candidateBlock);
   }
 };
+
+createNewBlock("second block");
+createNewBlock("third block");
+createNewBlock("fourth block");
+
+console.log(blockChain);
 
 export {};
