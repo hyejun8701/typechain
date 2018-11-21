@@ -9,6 +9,9 @@
     "start": "tsc-watch --onSuccess \" node dist/index.js\" "
   },
   "devDependencies": {
-    "tsc-watch": "^1.0.30"
+    "tsc-watch": "^1.0.17"
+  },
+  "dependencies": {
+    "typescript": "^3.1.6"
   }
 }
